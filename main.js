@@ -253,7 +253,13 @@
   const hgal = document.querySelector(".hgal");
   const track = document.querySelector(".hgal__track");
   if (hgal && track && !isMobile) {
-    const getDistance = () => track.scrollWidth - window.innerWidth + 80;
+    /* ширина левой панели сдвигает контент — учитываем её */
+    const getSideWidth = () => {
+      const w = getComputedStyle(document.documentElement).getPropertyValue("--side-w");
+      return parseFloat(w) || 0;
+    };
+    const getDistance = () =>
+      Math.max(0, track.scrollWidth - (window.innerWidth - getSideWidth()) + 80);
 
     gsap.to(track, {
       x: () => -getDistance(),
