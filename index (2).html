@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Space — лофт для корпоративов и презентаций в Нижнем Новгороде</title>
+  <meta name="description" content="Aura Space — аренда лофта в Нижнем Новгороде для корпоративов, вечеринок и презентаций. Пространство, которое работает на ваше событие.">
+  <meta property="og:title" content="Aura Space — лофт в Нижнем Новгороде">
+  <meta property="og:description" content="Аренда лофта для корпоративов, вечеринок и презентаций.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171412'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='600' fill='%23c9684c' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Aura Space — на главную">Aura<span>Space</span></a>
+      <nav class="nav__links">
+        <a href="#spaces">Пространства</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn--small">Забронировать</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2400&q=80" alt="">
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow reveal">Aura Space · Нижний Новгород</p>
+        <h1 class="hero__title reveal">
+          Пространство,<br>которое <em>запоминается</em>
+        </h1>
+        <p class="hero__lead reveal">
+          Лофт для корпоративов, вечеринок и презентаций. Кирпич, высокие потолки и свет, который работает на ваше событие.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn">Забронировать дату</a>
+          <a href="#spaces" class="btn btn--ghost">Смотреть залы</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="manifest">
+      <p class="manifest__text" data-split>
+        Мы создали место, где одинаково уместны и строгая презентация, и громкий корпоратив. Ничего лишнего — только пространство, которое вы наполняете смыслом.
+      </p>
+    </section>
+
+    <section class="spaces" id="spaces">
+      <header class="section-head reveal">
+        <p class="eyebrow">Пространства</p>
+        <h2 class="section-title">Один лофт.<br>Три сценария.</h2>
+      </header>
+      <div class="spaces__grid">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">01</div>
+          <h3>Презентации и конференции</h3>
+          <p>Просторный основной зал, проектор, звуковая система, сценическая зона и удобная рассадка до 80 гостей.</p>
+          <ul class="card__list">
+            <li>До 80 гостей</li>
+            <li>Проектор и экран 4K</li>
+            <li>Микрофоны и звук</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">02</div>
+          <h3>Корпоративы</h3>
+          <p>Банкетная зона, фуршетные столы и барная стойка. Пространство легко перестраивается под формат вашего вечера.</p>
+          <ul class="card__list">
+            <li>До 120 гостей</li>
+            <li>Банкетная посуда и мебель</li>
+            <li>Фотозона из кирпича</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">03</div>
+          <h3>Вечеринки</h3>
+          <p>Свет, музыка и танцпол. Тёплый кирпич и подсветка создают атмосферу, в которой хочется остаться до утра.</p>
+          <ul class="card__list">
+            <li>До 150 гостей</li>
+            <li>Световое оформление</li>
+            <li>DJ-зона</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <header class="section-head reveal">
+        <p class="eyebrow">Галерея</p>
+        <h2 class="section-title">Посмотрите сами.</h2>
+      </header>
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80" alt="Зал для презентаций"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1600&q=80" alt="Вечеринка в лофте"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=80" alt="Банкетный стол"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1600&q=80" alt="Интерьер лофта"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <header class="section-head reveal">
+        <p class="eyebrow">Тарифы</p>
+        <h2 class="section-title">Прозрачно.<br>Без скрытых платежей.</h2>
+      </header>
+      <div class="pricing__grid">
+        <article class="price reveal">
+          <h3>Презентация</h3>
+          <p class="price__value"><span>от</span> 6 000 ₽<small>/ час</small></p>
+          <p class="price__note">Основной зал, звук, проектор</p>
+          <a href="#contact" class="btn btn--ghost btn--block">Выбрать</a>
+        </article>
+        <article class="price price--featured reveal">
+          <span class="price__badge">Популярно</span>
+          <h3>Корпоратив</h3>
+          <p class="price__value"><span>от</span> 15 000 ₽<small>/ 4 часа</small></p>
+          <p class="price__note">Весь лофт, банкетная зона, бар</p>
+          <a href="#contact" class="btn btn--block">Выбрать</a>
+        </article>
+        <article class="price reveal">
+          <h3>Вечеринка</h3>
+          <p class="price__value"><span>от</span> 20 000 ₽<small>/ 5 часов</small></p>
+          <p class="price__note">Свет, DJ-зона, танцпол</p>
+          <a href="#contact" class="btn btn--ghost btn--block">Выбрать</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">Бронирование</p>
+          <h2 class="section-title">Давайте обсудим<br>ваше событие.</h2>
+          <p class="contact__lead">Оставьте заявку — ответим в течение рабочего дня и подберём дату.</p>
+        </header>
+        <form class="form reveal" id="booking-form" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span>Имя</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+7 (900) 000-00-00" required>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <span>Тип события</span>
+              <select name="type">
+                <option>Презентация</option>
+                <option>Корпоратив</option>
+                <option>Вечеринка</option>
+                <option>Другое</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Количество гостей</span>
+              <input type="number" name="guests" min="1" max="200" placeholder="50">
+            </label>
+          </div>
+          <label class="field">
+            <span>Дата и комментарий</span>
+            <textarea name="message" rows="3"></textarea>
+          </label>
+          <button type="submit" class="btn btn--block">Отправить заявку</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aura Space · Нижний Новгород</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Закрыть">×</button>
+    <img alt="">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
