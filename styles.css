@@ -783,3 +783,91 @@ main, .nav, .footer { position: relative; z-index: 1; }
   .char { opacity: 1 !important; filter: none !important; transform: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================
+   Левая закреплённая панель
+   ============================================ */
+:root { --side-w: 0px; }
+
+.side { display: none; }
+
+@media (min-width: 901px) {
+  :root { --side-w: 244px; }
+
+  .side {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 60;
+    width: var(--side-w);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.6rem;
+    background: rgba(26, 6, 8, 0.88);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border-right: 1px solid var(--line-soft);
+  }
+
+  .side__logo {
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+  .side__logo span { color: var(--accent); }
+
+  .side__meta {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1.15rem;
+  }
+  .side__city {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .side__phone {
+    font-size: 1.02rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+  }
+  .side__phone:hover { color: var(--accent); }
+
+  .side__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.85rem 1.15rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #230a0d;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: transform 0.45s var(--ease), background 0.35s ease;
+  }
+  .side__cta:hover { transform: translateY(-2px); background: var(--ink); }
+  .side__cta svg { flex: none; transition: transform 0.45s var(--ease); }
+  .side__cta:hover svg { transform: translate(2px, -2px); }
+
+  /* контент сдвигается вправо на ширину панели */
+  .nav { padding-left: calc(var(--side-w) + clamp(1rem, 3vw, 2.6rem)); }
+  main { padding-left: var(--side-w); }
+  .footer { padding-left: calc(var(--side-w) + clamp(1.2rem, 5vw, 5rem)); }
+
+  /* в верхней панели лого и кнопка уже слева — убираем дубли */
+  .nav__logo { display: none; }
+  .nav .btn--small { display: none; }
+  .nav__links { margin-left: 0; margin-right: auto; }
+}
+
+@media (min-width: 1200px) {
+  :root { --side-w: 268px; }
+}
